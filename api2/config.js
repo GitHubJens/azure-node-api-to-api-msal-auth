@@ -14,6 +14,7 @@ exports.webApps = {
         azurePort: 8080,
         azureUrl: '<App Service API1 Name>.azurewebsites.net', // Update this
         path: 'get',
+        scopes: ["api://<App Service API2 Name>/.default"], // Update this
         msalConfig: {
             auth: {
                 clientId: "<Your Azure AD Application ID>", // Update this

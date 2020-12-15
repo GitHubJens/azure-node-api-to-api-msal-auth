@@ -17,7 +17,7 @@ const cca = new msal.ConfidentialClientApplication(config.webApps.api1Settings.m
 // get route
 router.get('/get', async (req, res) => {
   const clientCredentialRequest = {
-    scopes: ["api://msapi2/.default"],
+    scopes: config.webApps.api1Settings.scopes,
   };
 
   // Get token with client authentication using the application
